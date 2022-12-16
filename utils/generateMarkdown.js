@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function for rendering the License Badge.  If no license, generates an empty string.
 function renderLicenseBadge(license) {
   if (license === 'MIT License') {
     return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
@@ -20,8 +19,7 @@ function renderLicenseBadge(license) {
   };
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function for rendering the License link.  If no license, generates an empty string.
 function renderLicenseLink(license) {
   if (license === 'MIT License') {
     return 'https://opensource.org/licenses/MIT';
@@ -42,23 +40,26 @@ function renderLicenseLink(license) {
   };
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function for rendering the License Section of the README file.  If no license, renders an empty string.
 function renderLicenseSection(license) {
   if (license === 'not listed/none') {
     return '';
   } else {
     const licenseLink = renderLicenseLink(license);
     return `## License
-  This application is covered under the ${license}.
-  <br>For more information: ${licenseLink}`; 
-  }
+This application is covered under the ${license}.
+<br>For more information: ${licenseLink}`; 
+  };
 }
 
-// TODO: Create a function to generate markdown for README
+// function to generate the Markdown Language which will ultimately be written into the README file.
 function generateMarkdown(data) {
   const licenseSection = renderLicenseSection(data.license);
   const licenseBadge = renderLicenseBadge(data.license);
+  let licenseTableOfContents = '';
+  if (licenseSection !== '') {
+    licenseTableOfContents = "- [License](#license)";
+  };
   return `# ${data.title}<br>${licenseBadge}
 
   ## Description
@@ -69,7 +70,7 @@ function generateMarkdown(data) {
   
   - [Installation](#installation)
   - [Usage](#usage)
-  - [License](#license)
+  ${licenseTableOfContents}
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
@@ -91,11 +92,12 @@ function generateMarkdown(data) {
   ${data.testInstructions}
 
   ## Questions
-  Additional questions?<br>
+  Contact Info<br>
   GitHub user name: ${data.githubUserName}<br>
   Link to GitHub profile: https://github.com/${data.githubUserName}<br>
-  Contact me at: ${data.userEmail}
+  Email: ${data.userEmail}
 `;
 }
 
+// exports generateMarkdown function so that it can be imported by the index.js file.
 module.exports = generateMarkdown;
