@@ -4,6 +4,8 @@
 
   Professional looking README.md files are generated based on user responses to questions in the terminal
   
+https://user-images.githubusercontent.com/113722447/208186485-8211cdb2-c328-46da-b943-7d8ac311b39e.mp4
+
   ## Table of Contents
   
   - [Installation](#installation)
