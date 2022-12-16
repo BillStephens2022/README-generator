@@ -35,4 +35,3 @@ This application is covered under the MIT License.
   Contact Info<br>
   GitHub user name: BillStephens2022<br>
   Link to GitHub profile: https://github.com/BillStephens2022<br>
-  Email: bill@gmail.com
