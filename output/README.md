@@ -1,8 +1,8 @@
-# Expense-Tracker-MERN<br>![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# Laguna Cafe<br>![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
 
-  Expense Tracker is a full stack MERN app which allows users to track their personal expenses. Upon sign in, a user can enter expense transactions and categorize them as essential vs non-essential and into various sub-categories (Housing, Food, Utilities, Entertainment, etc). Expenses are displayed by category into pie charts. The app also features a compound interest calculator so users can run scenarios where they might save a certain percentage of their non-essential expenses per month and see how much that translates into long term gains.
+  Laguna Cafe is a sample restaurant website built using React.js.  Features an image carousel for food and cocktail images, food and cocktail menus, and a contact page.
   
   ## Table of Contents
   
@@ -15,11 +15,11 @@
   
   ## Installation
   
-  deployed app URL:  https://expense-tracker-mern.herokuapp.com/
+  Deployed URL:  https://billstephens2022.github.io/LagunaCafe/
   
   ## Usage
   
-  sign up/log in to deployed URL above
+  N/A
 
   ## License
 This application is covered under the MIT License.
